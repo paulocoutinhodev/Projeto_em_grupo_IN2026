@@ -1,0 +1,33 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  height:270px;
+  gap:50px;
+  background-color: #333333;
+  font-family: Darker Grotesque;
+}
+
+.pata-logo{
+  padding-left:100px;
+}
+
+.footer-logo-container{
+  display:flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+
+}
+
+.footer-logo-container p{
+  font-weight:400;
+  font-weight:18px;
+  color:#FFFFFF;
+}

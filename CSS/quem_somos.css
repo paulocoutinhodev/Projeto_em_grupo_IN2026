@@ -1,0 +1,26 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap:30px;
+}
+
+main p{
+  font-family: Darker Grotesque;
+  font-size: 24px;
+  font-weight:400;
+  padding-bottom:50px;
+}
+
+main h1{
+  padding-top:50px;
+  font-size:48px;
+  font-weight:400;
+}

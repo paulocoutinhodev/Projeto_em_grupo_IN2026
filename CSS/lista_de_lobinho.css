@@ -1,0 +1,35 @@
+.search{
+    max-width: 940px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    max-width: 940px;
+    width: 100%;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 163px;
+    margin-left: 221px
+}
+#bar{
+    max-width: 808px;
+    width: 100%;
+    height: 47px;
+    opacity: 1;
+    border-width: 1px;
+}
+#add-lobo{
+    max-width: 130px;
+    width: 100%;
+    height: 47px;
+    opacity: 1;
+
+}

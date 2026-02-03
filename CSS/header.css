@@ -1,0 +1,60 @@
+body{
+  padding-top:130px;
+  height:100vh;
+}
+*{
+  margin:0;
+  padding:0;
+}
+header{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+
+  background-color: #85CDF5;
+  height:130px;
+  font-family: Darker Grotesque;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width:100%;
+}
+
+header a{
+  text-decoration: none;
+  color:black;
+}
+
+.quem-somos-link,
+.nossos-lobinhos-link{
+  font-size:30px;
+  font-weight: 700;
+  position: relative;
+}
+
+.quem-somos-link::after,
+.nossos-lobinhos-link::after{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.quem-somos-link:hover::after,
+.nossos-lobinhos-link:hover::after{
+  width:70%;
+
+}

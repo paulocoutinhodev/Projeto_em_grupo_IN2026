@@ -1,5 +1,4 @@
 body{
-  padding-top:130px;
   height:100vh;
 }
 *{
@@ -11,10 +10,8 @@ header{
   align-items: center;
   justify-content: center;
 
-  position: fixed;
+  position: sticky;
   top:0;
-  left:0;
-  right:0;
   z-index: 1000;
 
   background-color: #85CDF5;

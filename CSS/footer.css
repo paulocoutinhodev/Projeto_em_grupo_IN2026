@@ -78,6 +78,7 @@ footer{
   background: linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
   color: white;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .quem-somos-btn:hover{

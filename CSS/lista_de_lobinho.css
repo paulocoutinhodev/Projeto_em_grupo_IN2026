@@ -4,7 +4,7 @@
     height: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .search-bar{
@@ -25,7 +25,6 @@
     height: 47px;
     opacity: 1;
     border-width: 1px;
-   
     padding-left: 45px;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 24px;
@@ -43,7 +42,12 @@
     font-size: 36px;
     display: flex;
     align-items: flex-end;
-    justify-content: center
+    justify-content: center;
+    border:none;
+    cursor:pointer
+}
+#add-lobo:active{
+    background-color: #806a34;
 }
 
 #search-paw{
@@ -61,11 +65,35 @@
     border:none;
     cursor:pointer;
 }
-.input-paw-set {
+.input-paw-set{
     position: relative;
     max-width: 808px; 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.adopted-filter{
+    max-width: 264px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 221px;
+    margin-top: 18px;
+    gap: 23px
+}
+
+.adopted-filter>p{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#check{
+    width: 20px;
+    height: 20px;
+}
+#check:focus{
+    accent-color: rgb(3, 3, 102);
 }

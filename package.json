@@ -1,0 +1,24 @@
+{
+  "name": "projeto_em_grupo_in2026",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:api": "json-server --watch lobinhos.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulocoutinhodev/Projeto_em_grupo_IN2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/paulocoutinhodev/Projeto_em_grupo_IN2026/issues"
+  },
+  "homepage": "https://github.com/paulocoutinhodev/Projeto_em_grupo_IN2026#readme",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}

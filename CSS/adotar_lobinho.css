@@ -1,0 +1,146 @@
+
+
+
+.diva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    padding: 50px ;
+}
+
+.diva1 {
+    display: flex;
+    justify-content: center;
+    gap:50px
+}
+
+.divfoto {
+    width: 200px;
+    height: 200px;
+}
+/* Div para Mensagens na tela */
+.divmensagem_adote{
+    font-family: Darker Grotesque;
+    font-weight: 600px;
+    font-size: 60px;
+
+
+}
+.divmensagem_id{
+font-family: Darker Grotesque;
+font-weight: 600px;
+
+
+}
+
+/* Imagem do lobo */
+.divfoto img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+
+}
+
+.diva2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    gap:50px
+
+}
+
+.divnome {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 85%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+
+    
+
+
+
+}
+.divinomeEidade{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+
+}
+
+.divemail {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 100%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+    
+
+
+
+}
+
+.dividade {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 10%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;   
+
+
+    
+}
+
+/* botão */
+
+
+
+.diva3 {
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    
+      border: none;
+  outline: none;
+
+}
+.botao_adotar{
+    width: 209px;
+    height: 60px;
+    
+    border-width: 1px;
+      font-family: Darker Grotesque;
+    font-weight: 600px;
+    font-size: 36px;
+    background: #2C5680;
+    color: #FFFFFF;
+
+
+
+
+
+}

@@ -1,0 +1,166 @@
+
+
+
+.diva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    padding: 50px ;
+    
+}
+
+.diva1 {
+    display: flex;
+    justify-content: center;
+    gap:50px
+}
+
+.divfoto {
+    width: 200px;
+    height: 200px;
+}
+/* Div para Mensagens na tela */
+.divmensagem_adote{
+    font-family: Darker Grotesque;
+    font-weight: 600px;
+    font-size: 60px;
+
+
+}
+.divmensagem_id{
+font-family: Darker Grotesque;
+font-weight: 600px;
+
+
+}
+
+/* Imagem do lobo */
+.divfoto img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+
+}
+
+.diva2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap:50px
+
+}
+
+.divnome {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 85%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    flex-direction: column;
+    gap:30px;
+    
+
+
+    
+
+
+
+}
+.divinomeEidade{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap:30px;
+    width: 100%;
+    
+
+
+
+}
+
+.divemail {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 100%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+    flex-direction: column;
+    gap:30px;
+
+
+
+}
+
+.dividade {
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 10%;
+    height: 84px;
+    font-family: Darker Grotesque;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;   
+    flex-direction: column;
+    gap:30px;
+
+
+    
+}
+
+/* botão */
+
+
+
+.diva3 {
+    display: flex;
+    justify-content: center;
+    padding-top:40px;
+}
+
+form{ 
+    width: 70%;
+    
+    
+}
+form input{
+    
+      border: none;
+    outline: none;
+    width: 100%;
+    font-size: 21px;
+    padding-left:10px ;
+
+}
+.botao_adotar{
+    width: 209px;
+    height: 60px;
+    
+    border-width: 1px;
+    font-family: Darker Grotesque;
+    font-weight: 600px;
+    font-size: 36px;
+    background: #2C5680;
+    color: #FFFFFF;
+    
+
+
+
+
+
+}
+

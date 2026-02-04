@@ -1,0 +1,279 @@
+/* -------------- Títulos, subtítulos e textos -------------- */
+
+
+body {
+    font-family: Darker Grotesque;
+
+    color: #ffffff;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: #DEB959;
+}
+
+.sub-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%; /* ajustar depois */
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.bigger-text {
+    font-size: 30px;
+    line-height: 25px;
+}
+
+/* -------------- Seção "Adote um Lobinho" -------------- */
+
+.adopt-section {
+    /* Largura e Altura - Verificação Constante */
+    height: 610px; /* Talvez mudar para Responsividade */
+    width: 100%;
+
+    /* Imagem de fundo */
+    background-image: url("../assets/home_wolfs/back_lobo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.adopt-section span {
+    background-color: #ffffff;
+
+    /* Largura e Altura - Verificação Constante */
+    width: 100px;
+    height: 5px;
+}
+
+/* Ajuste do Tamanho do Texto <p> */
+.adopt-section p {
+    /* Largura e Altura - Verificação Constante */
+    width: 630px;
+    height: 75px; /* Talvez mudar para Responsividade */
+}
+
+/* -------------- Seção "Sobre" -------------- */
+
+.about-section {
+    /* Largura e Altura - Verificação Constante */
+    height: 333px; 
+    width: 100%; /* Talvez mudar para Responsividade */
+
+    /* Fundo */
+    background: #2C5680;
+;
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+/* Ajuste do Tamanho do Texto <p> */
+.about-section p {
+    /* Largura e Altura - Verificação Constante */
+    width: 960px; 
+    height: 166px; /* Talvez mudar para Responsividade */
+}
+
+/* -------------- Seção "Valores" -------------- */
+
+.values-section {
+    /* Largura e Altura - Verificação Constante */
+    height: 625px; 
+    width: 100%; /* Talvez mudar para Responsividade */
+
+    /* Fundo */
+    background: #333333;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.values-section ul {
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.values-section ul li {
+    /* Largura e Altura - Verificação Constante */
+    width: 195px;
+    height: 438px;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+/* Tag <div> que porta as Imagens dos Símbolos */
+.value-symbol {
+    /* Formação do Círculo */
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: #fafafa;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- Seção "Lobos Exemplo" -------------- */
+
+/* Toda a Seção de Exemplos, com Subtítulo <h2> e <div> do Conjunto de Lobos */ 
+.example-section {
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 50px 10px;
+
+    /* Mudança de cor nessa Seção */
+    color: #000000
+}
+
+/* <div> que contém os Cards dos Lobos */
+.wolfs-section {
+    width: 80%;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    padding: 50px;
+}
+
+/* Cada Card Individual de Lobo */
+.wolf-card {
+    width: 90%;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+/* <div> que porta a Imagem do Lobo e seu Fundo */
+.wolf-image img {
+    /* Largura e Altura - Verificação Constante */
+    width: 430px;
+    height: 328px;
+}
+
+.wolf-image div {
+    /* Largura e Altura - Verificação Constante */
+    width: 430px;
+    height: 328px;
+
+    position: absolute;
+    z-index: -1;
+
+    transform: translate(-30px, -30px);
+
+    /* Detalhes da <div> de Fundo */ 
+    background-color: #2C5680;
+    border: 4px solid #333333;
+}
+
+/* <div> que porta as Informações do Lobo */
+.wolf-info {
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+
+}
+
+.wolf-info div {
+    width: 100%;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.wolf-info span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.wolf-info p {
+    text-align: left;
+}
+
+/* Diferenciação dos Cards de Lobos - Elementos Ímpares */
+.wolf-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.wolf-card:nth-child(even) .wolf-info div {
+    align-items: flex-end;
+}
+
+.wolf-card:nth-child(even) .wolf-info p {
+    text-align: right;
+}
+
+.wolf-card:nth-child(even) .wolf-image div {
+    transform: translate(30px, -30px);
+}

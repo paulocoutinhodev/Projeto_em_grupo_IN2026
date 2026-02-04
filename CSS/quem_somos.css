@@ -8,19 +8,20 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  gap:30px;
+  flex:1;
+  gap:80px;
 }
 
 main p{
   font-family: Darker Grotesque;
   font-size: 24px;
   font-weight:400;
-  padding-bottom:50px;
+  padding-bottom:90px;
+  width:80%;
 }
 
 main h1{
-  padding-top:50px;
+  padding-top:70px;
   font-size:48px;
   font-weight:400;
 }

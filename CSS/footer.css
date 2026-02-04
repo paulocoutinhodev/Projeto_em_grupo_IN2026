@@ -80,5 +80,6 @@ footer{
 }
 
 .quem-somos-btn:hover{
-
+  background: linear-gradient(270deg, #235588 0%, #c29420 100%);
+  font-weight: bold;
 }

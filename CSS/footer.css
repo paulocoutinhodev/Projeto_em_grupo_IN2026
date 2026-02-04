@@ -12,7 +12,8 @@ footer{
   gap:50px;
   background-color: #333333;
   font-family: Darker Grotesque;
-  border-top: 1000px solid linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
+  border-top: 5px solid;
+  border-image: linear-gradient(270deg, #2C5680 0%, #DEB959 100%) 1
 
 }
 
@@ -31,7 +32,7 @@ footer{
 
 .footer-logo-container p{
   font-weight:400;
-  font-weight:18px;
+  font-size:18px;
   color:#FFFFFF;
 }
 

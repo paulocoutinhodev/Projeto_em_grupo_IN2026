@@ -23,6 +23,7 @@
                 <div class="input-paw-set">
                     <button id="search-paw"></button>
                     <input type="text" name="nome" id="bar">
+                    <p id="error-case"></p>
                 </div>
                 <a href="adicionar_lobinho.html" id="add-link"><button id="add-lobo">+ Lobo</button></a>
             </nav>
@@ -31,83 +32,20 @@
                 <p>Ver lobinhos adotados</p>
             </div>
         </section>
-        
         <section>
-            <ul class="wolf-list">
-                <li class="wolf-list-item"> 
-                    <div class="square"><img src="/loboTeste.png" class="wolf-img"></div>
-                    <div class="wolf-info"> 
-                        <div class="wolf-name-button">
-                            <div class="wolf-title-age"> 
-                                <h2>Nome do Lobo</h2>
-                                <p>Idade XX anos</p> 
-                            </div>
-                            <button class="wolf-adopt-button">Adotar</button>
-                        </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
-                    </div>
-                </li>
-                  <li class="wolf-list-item"> 
-                    <div class="wolf-info"> 
-                        <div class="wolf-name-button">
-                            <button class="wolf-adopt-button">Adotar</button>
-                            <div class="wolf-title-age"> 
-                                <h2>Nome do Lobo</h2>
-                                <p>Idade XX anos</p> 
-                            </div>
-                        </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
-                    </div>
-                   <div class="square"><img src="/loboTeste.png" class="wolf-img-right"></div>
-                </li>
-                 <li class="wolf-list-item"> 
-                    <div class="square"><img src="/loboTeste.png" class="wolf-img"></div>
-                    <div class="wolf-info"> 
-                        <div class="wolf-name-button">
-                            <div class="wolf-title-age"> 
-                                <h2>Nome do Lobo</h2>
-                                <p>Idade XX anos</p> 
-                            </div>
-                            <button class="wolf-adopt-button">Adotar</button>
-                        </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
-                    </div>
-                </li>
-                  <li class="wolf-list-item"> 
-                    <div class="wolf-info"> 
-                        <div class="wolf-name-button">
-                            <button class="wolf-adopt-button">Adotar</button>
-                            <div class="wolf-title-age"> 
-                                <h2>Nome do Lobo</h2>
-                                <p>Idade XX anos</p> 
-                            </div>
-                        </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
-                    </div>
-                   <div class="square"><img src="/loboTeste.png" class="wolf-img-right"></div>
-                </li>
-            </ul>
-        </section>        
-        
-    </main>
-    <nav>
-        <ul>
-            <li><button></button></li>
-                
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
+            <ul class="wolf-list" id="lista-lobos">
             
-            <li><button></button></li>    
+            </ul>
+        </section>
+    <nav class="pagination-wrapper">
+        <ul id="pagination" class="pagination-list">
+           
         </ul>
     </nav>
     <footer>
     <div class="iframe-container">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.922543994864!2d-43.14969114458004!3d-22.904862500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817dce2f93eb%3A0x9e97773b91b93bba!2sUniversidade%20Federal%20Fluminense%20-%20Campus%20Praia%20Vermelha!5e0!3m2!1spt-BR!2sbr!4v1770153325464!5m2!1spt-BR!2sbr" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-   
     <div class="enderecos">
         <div class="localizacao">
             <img class="icon-images" src="../assets/map-placeholder-icon.png">
@@ -128,5 +66,7 @@
       <img class="pata-logo" src="../assets/logo-patas.png">
     </div>
     </footer>
+    <script type="module" src="../SCRIPT/lista_de_lobinhos.js"></script>
+    <script type="module" src="../API/api_get_lista_de_lobinhos.js"></script>
 </body>
 </html>

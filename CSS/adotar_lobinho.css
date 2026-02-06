@@ -1,19 +1,17 @@
 
-
-
 .diva {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:50px;
-    padding: 50px ;
-    
+    gap: 100px;
+    padding: 50px;   
 }
 
 .diva1 {
     display: flex;
-    justify-content: center;
-    gap:50px
+    gap:50px;
+    margin-left: 219px;
+    padding: 50px;
 }
 
 .divfoto {
@@ -30,7 +28,7 @@
 }
 .divmensagem_id{
 font-family: Darker Grotesque;
-font-weight: 600px;
+font-weight: 600;
 
 
 }
@@ -152,7 +150,7 @@ form input{
     
     border-width: 1px;
     font-family: Darker Grotesque;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 36px;
     background: #2C5680;
     color: #FFFFFF;

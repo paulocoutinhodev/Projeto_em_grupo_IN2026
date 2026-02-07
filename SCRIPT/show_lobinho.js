@@ -26,7 +26,7 @@ async function carregarLobo() {
             const linkDestino = `adotar_lobinho.html?id=${lobo.id}`;
             const adoptButton = `
              <a href = "${linkDestino}" id="destiny">
-                    <button class = "btn-adopt">Adotar</button>
+                    <button class = "btn-adopt">ADOTAR</button>
             </a>`;
             const deleteButton = `<button id="btn-excluir" class="btn-delete">Excluir</button>`;
 

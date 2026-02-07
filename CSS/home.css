@@ -47,11 +47,11 @@ body {
     line-height: 25px;
 }
 
-/* -------------- Seção "Adote um Lobinho" -------------- */
+/* -------------- Seção Capa "Adote um Lobinho" -------------- */
 
 .adopt-section {
     /* Largura e Altura - Verificação Constante */
-    height: 610px; /* Talvez mudar para Responsividade */
+    height: 570px; /* Talvez mudar para Responsividade */
     width: 100%;
 
     /* Imagem de fundo */

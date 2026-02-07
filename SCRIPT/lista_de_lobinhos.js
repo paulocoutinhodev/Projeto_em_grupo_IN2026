@@ -8,7 +8,8 @@ const pageStatus = {
 };
 const listaElement = document.getElementById('lista-lobos');
 const paginationElement = document.getElementById('pagination');
-const inputSearch= document.getElementById('bar');
+const inputSearchButton= document.getElementById('search-paw');
+const inputSearch = document.getElementById('bar')
 const inputCheck = document.getElementById('check');
 const inputBar = document.getElementById('error-case')
 
@@ -110,15 +111,20 @@ function renderPage(totalPaginas) {
     criarBotãoPaginacao(">",() => changePage(pageStatus.pagina + 1), pageStatus.pagina===totalPaginas)
 }
 
-
-
-
-inputSearch.addEventListener('input', (e)=>{
-        pageStatus.busca = e.target.value;
-        pageStatus.pagina = 1;
-        startPage();
+function pesquisaNome () {
+    pageStatus.busca = inputSearch.value;
+    pageStatus.pagina = 1;
+    startPage();
+}
+inputSearchButton.addEventListener('click', () => {
+    pesquisaNome();
 });
 
+inputSearch.addEventListener('keydown',(event)=>{
+    if(event.key === 'Enter'){
+        pesquisaNome()
+    }
+});  
 inputCheck.addEventListener('change', (e) =>{
     pageStatus.adotados = e.target.checked;
     pageStatus.pagina = 1;

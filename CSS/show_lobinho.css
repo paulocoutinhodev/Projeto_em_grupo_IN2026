@@ -113,7 +113,41 @@ main {
 
 .btn-adopt {
     background-color: #7AAC3A;
+        width: 180px;
+    height: 56px;
+
+    border: none;
+
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
 }
+
+#destiny{
+
+    background-color: #7AAC3A;
+    width: 180px;
+    height: 56px;
+
+    border: none;
+
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
 
 .btn-delete {
     background-color: #DE5959;

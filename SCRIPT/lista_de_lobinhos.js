@@ -36,7 +36,7 @@ function renderList(Wolfs) {
     else{inputBar.innerHTML = ""}    
     Wolfs.forEach((lobo,index) => {
         const par = (index) % 2 === 0
-        const linkDestino = lobo.adotado? "#" : `adotar_lobinho.html?id=${lobo.id}`
+        const linkDestino = lobo.adotado ? "#" : `show_lobinho.html?id=${lobo.id}`
         const htmlButton = `
         <a href = "${linkDestino}" id="destination">
             <button class="wolf-adopt-button ${lobo.adotado ? 'adotado' : ''}">${lobo.adotado ? 'Adotado' : 'Adotar'}
@@ -112,16 +112,12 @@ function renderPage(totalPaginas) {
 
 
 
-let timeoutId;
+
 inputSearch.addEventListener('input', (e)=>{
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
         pageStatus.busca = e.target.value;
         pageStatus.pagina = 1;
         startPage();
-
-    },500);
-})
+});
 
 inputCheck.addEventListener('change', (e) =>{
     pageStatus.adotados = e.target.checked;

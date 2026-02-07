@@ -3,7 +3,7 @@ import { excluirLobo } from "../API/api_delete_show_lobinho.js";
 
 const imgLobo = document.querySelector('.wolf-image img')
 const nomeLoboTexto = document.querySelector('.title')
-const idLoboTexto = document.querySelectorAll('.paragraph')
+const idLoboTexto = document.querySelector('.paragraph')
 const adoptionDiv = document.getElementById('botoes');
 
 async function carregarLobo() {

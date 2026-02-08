@@ -36,17 +36,13 @@ async function carregarLobo() {
 carregarLobo();
 
 
-const btnAdotar = document.getElementById('btn_adpt');
-    btnAdotar.addEventListener('click',async(e) => {
+const FormAdoptation = document.getElementById('formAdopt');
+    FormAdoptation.addEventListener('submit',async(e) => {
         e.preventDefault();
         try{
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
             
-            if (!nomeDonoAdotar.value || !emailDonoAdotar.value||!idadeDonoAdotar) {
-            alert("Por favor, preencha o nome, email e idade.");
-            return;
-        }
             await atualizarLobinhoParcial(id,nomeDonoAdotar.value,idadeDonoAdotar.value,emailDonoAdotar.value);
             window.location.href="lista_de_lobinhos.html";
             alert("Dono adcionado com sucesso!");

@@ -157,6 +157,9 @@
     gap:130px;
 }
 .square{
+    min-width: 430px;
+    min-height: 328px;
+
     max-width: 430px;
     width: 100%;
     height: 328px;
@@ -164,7 +167,11 @@
     border: 4px solid #333333;
     background-color:#2C5680;
 }
+
 .wolf-img{
+    min-width: 430px;
+    min-height: 328px;
+
     max-width: 430px;
     width: 100%;
     height: 328px;
@@ -198,13 +205,15 @@
 .wolf-name-button{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .wolf-title-age{
     gap: 10px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .wolf-title-age>p{
@@ -224,6 +233,7 @@
 }
 .wolf-adopt-button{
     max-width: 157px;
+    min-width: 157px;
     width: 100%;
     height: 46px;
     opacity: 1;
@@ -322,7 +332,14 @@
     text-align: right;
 }
 
+.wolf-list-item:nth-child(even) .wolf-title-age {
+    align-items: flex-end;
+}
+
 .wolf-img-right{
+    min-width: 430px;
+    min-height: 328px;
+
     max-width: 430px;
     width: 100%;
     height: 328px;

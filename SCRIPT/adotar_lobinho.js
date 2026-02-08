@@ -37,7 +37,7 @@ carregarLobo();
 
 
 const btnAdotar = document.querySelector('.botao_adotar');
-    btnAdotar.addEventListener('click',async(e) => {
+    btnAdotar.addEventListener('submit',async(e) => {
         e.preventDefault();
         try{
             const params = new URLSearchParams(window.location.search);

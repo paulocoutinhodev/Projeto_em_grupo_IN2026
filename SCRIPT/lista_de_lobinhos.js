@@ -44,37 +44,86 @@ function renderList(Wolfs) {
             </button>
         </a>`
         let html = ""
-        if (par) {
-            html =`
-            <li class="wolf-list-item"> 
-                <div class="square"><img src="${lobo.imagem}" class="wolf-img"></div>
-                <div class="wolf-info"> 
-                    <div class="wolf-name-button">
-                        <div class="wolf-title-age"> 
-                            <h2>${lobo.nome}</h2>
-                            <p>Idade ${lobo.idade} anos</p> 
+
+        if (!lobo.adotado) {
+            if (par) {
+                html =`
+                <li class="wolf-list-item"> 
+                    <div class="square"><img src="${lobo.imagem}" class="wolf-img"></div>
+                    <div class="wolf-info"> 
+                        <div class="wolf-name-button">
+                            <div class="wolf-title-age"> 
+                                <h2>${lobo.nome}</h2>
+                                <p>Idade: ${lobo.idade} anos</p> 
+                            </div>
+                            ${htmlButton}
                         </div>
-                        ${htmlButton}
+                        <p class="description-text">${lobo.descricao}</p>
                     </div>
-                    <p>${lobo.descricao}</p>
-                </div>
-            </li>`;
-        }else {
-            html = `
-            <li class="wolf-list-item"> 
-                <div class="wolf-info"> 
-                    <div class="wolf-name-button">
-                        ${htmlButton}
-                        <div class="wolf-title-age"> 
-                            <h2>${lobo.nome}</h2>
-                            <p>Idade ${lobo.idade} anos</p> 
+                </li>`;
+            }
+            
+            else {
+                html = `
+                <li class="wolf-list-item"> 
+                    <div class="wolf-info"> 
+                        <div class="wolf-name-button">
+                            ${htmlButton}
+                            <div class="wolf-title-age"> 
+                                <h2>${lobo.nome}</h2>
+                                <p>Idade: ${lobo.idade} anos</p> 
+                            </div>
                         </div>
+                        <p class="description-text">${lobo.descricao}</p>
                     </div>
-                    <p>${lobo.descricao}</p>
-                </div>
-                <div class="square"><img src="${lobo.imagem}" class="wolf-img-right"></div>
-            </li>`;
+                    <div class="square"><img src="${lobo.imagem}" class="wolf-img-right"></div>
+                </li>`;
+            }
+
+        } else {
+            
+            if (par) {
+                html =`
+                <li class="wolf-list-item"> 
+                    <div class="square"><img src="${lobo.imagem}" class="wolf-img"></div>
+                    
+                    <div class="wolf-info"> 
+                        <div class="wolf-name-button">
+                            <div class="wolf-title-age"> 
+                                <h2>${lobo.nome}</h2>
+                                <p>Idade: ${lobo.idade} anos</p> 
+                            </div>
+                            ${htmlButton}
+                        </div>
+                        <p class="description-text">${lobo.descricao}</p>
+                        
+                        <p class="owner-text">Adotado por: ${lobo.nomeDono}</p>
+                    
+                    </div>
+                
+                </li>`;
+            }
+            
+            else {
+                html = `
+                <li class="wolf-list-item"> 
+                    <div class="wolf-info"> 
+                        <div class="wolf-name-button">
+                            ${htmlButton}
+                            <div class="wolf-title-age"> 
+                                <h2>${lobo.nome}</h2>
+                                <p>Idade: ${lobo.idade} anos</p> 
+                            </div>
+                        </div>
+                        <p class="description-text">${lobo.descricao}</p>
+
+                        <p class="owner-text">Adotado por: ${lobo.nomeDono}</p>
+                    </div>
+                    <div class="square"><img src="${lobo.imagem}" class="wolf-img-right"></div>
+                </li>`;
+            }
         }
+
         listaElement.innerHTML += html;
     });
 }

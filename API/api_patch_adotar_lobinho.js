@@ -20,7 +20,7 @@
       throw new Error(`Erro http! Status: ${response.status}`);
   }
   const atualizado = await response.json();
-  alert('Lobinho atualizado: ',atualizado)
+  alert('Lobinho atualizado: ' + atualizado.nome)
   return atualizado;
   }
   

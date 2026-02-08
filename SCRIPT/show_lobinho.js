@@ -5,6 +5,9 @@ const imgLobo = document.querySelector('.wolf-image img')
 const nomeLoboTexto = document.querySelector('.title')
 const idLoboTexto = document.querySelector('.paragraph')
 const adoptionDiv = document.getElementById('botoes');
+const bttnAdopt = document.getElementById('adoption-bttn');
+const bttnExclude = document.getElementById('exclude-bttn')
+
 
 async function carregarLobo() {
     try {
@@ -22,27 +25,6 @@ async function carregarLobo() {
             idLoboTexto.textContent = `${lobo.descricao}`
             imgLobo.src = lobo.imagem;
             imgLobo.alt = `Foto do lobo${lobo.nome}`;
-            
-            const linkDestino = `adotar_lobinho.html?id=${lobo.id}`;
-            const adoptButton = `
-             <a href = "${linkDestino}" id="destiny">
-                    <button class = "btn-adopt">ADOTAR</button>
-            </a>`;
-            const deleteButton = `<button id="btn-excluir" class="btn-delete">Excluir</button>`;
-
-            adoptionDiv.innerHTML = adoptButton + deleteButton;
-
-            const btnDeletWolf = document.getElementById('btn-excluir');
-            btnDeletWolf.addEventListener('click', async () => {
-                try {
-                    await excluirLobo(id);
-                    window.location.href="lista_de_lobinhos.html";
-                    alert("Lobo excluído com sucesso!");
-
-                } catch (error) {
-                    alert("Erro ao excluir")
-                }                
-            });
         }
     } catch (error) {       
         console.error("Erro ao carregar lobo:", error);
@@ -51,4 +33,27 @@ async function carregarLobo() {
 
 }
 carregarLobo();
+bttnExclude.addEventListener('click', async () => {
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const id = params.get('id');
+                    await excluirLobo(id);
+                    window.location.href="lista_de_lobinhos.html";
+                    alert("Lobo excluído com sucesso!");
+
+                } catch (error) {
+                    alert("Erro ao excluir")
+                }                
+});
+
+bttnAdopt.addEventListener('click', async () => {
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const id = params.get('id');
+                    window.location.href=`adotar_lobinho.html?id=${id}`;
+
+                } catch (error) {
+                    alert("Erro ao ir para página de adotar")
+                }                
+});
 

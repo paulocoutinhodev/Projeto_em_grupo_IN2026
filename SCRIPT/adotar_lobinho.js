@@ -44,7 +44,7 @@ const btnAdotar = document.getElementById('btn_adpt');
             const id = params.get('id');
             
             if (!nomeDonoAdotar.value || !emailDonoAdotar.value||!idadeDonoAdotar) {
-            alert("Por favor, preencha o nome e o email.");
+            alert("Por favor, preencha o nome, email e idade.");
             return;
         }
             await atualizarLobinhoParcial(id,nomeDonoAdotar.value,idadeDonoAdotar.value,emailDonoAdotar.value);

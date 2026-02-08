@@ -10,7 +10,7 @@ export async function adicionar_lobinho(lobinho) {
     })
         .then( Response => Response.text())
         .then(text => {
-            alert("Lobinho Salvo com sucesso.")
+            alert("Lobinho " + lobinho.nome + " salvo com sucesso.")
             console.log(text)
         }
 

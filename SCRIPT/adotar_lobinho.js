@@ -45,7 +45,7 @@ const FormAdoptation = document.getElementById('formAdopt');
             
             await atualizarLobinhoParcial(id,nomeDonoAdotar.value,idadeDonoAdotar.value,emailDonoAdotar.value);
             window.location.href="lista_de_lobinhos.html";
-            alert("Dono adcionado com sucesso!");
+            alert("Dono " + nomeDonoAdotar.value + " adicionado com sucesso!");
             
         }
         catch(error){
